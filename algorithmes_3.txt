@@ -1,0 +1,44 @@
+
+//----------------------problem_1-----------------------------//
+ALGORITHME_tri_par_l'order_croissant.
+VAR
+
+ARRAY_OF INTEGER[10]:reel 
+i,j,n : INTEGER;
+ R: reel;
+BEGIN
+ 
+ //------------ demende de de tableau----------------------//
+        
+	 Write("donnez n");
+         Read(n);
+
+  //----------------------ramplire de tableau -------------//
+         Write("donneez les valeux de tableau T1");
+            FOR i FROM 0 TO n-1 STEP 1 DO
+           read(T1[i]);
+
+     
+
+
+	FOR  i  FROM 0 TO n-1
+		FOR j FROM 0 TO n-1
+			IF ( T[i] > T[j] )
+				  R :=T[i];
+				T[i]:=T[j];
+				T[i]:=R;
+				
+			END_if
+		END_FOR
+	END_FOR	
+
+         FOR  i  FROM 0 TO  n-1
+ 		WRITE ("T[n]" );	
+	END_FOR
+
+
+END
+     
+
+
+
